@@ -1,0 +1,173 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+  @media (min-width: 1281px) {
+  
+    .scroll-wrapper{
+      overflow-x: hidden;
+      height: calc(100vh - 165px);
+      overflow: -moz-scrollbars-none;
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar { 
+          width: 3px;
+          background-color: #e7e7e7;
+      }
+      &::-webkit-scrollbar-thumb{
+          background-color: #c0c0c0;
+          border-radius: 3%;
+      }
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    //CSS
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .sg-wrapper{
+      padding-top: 60px;
+      #sidebar{
+        top: 60px;
+      }
+    }
+
+    .sg-product-catalog{
+      padding: 20px 0;
+      height: calc(100vh - 106px);
+    }
+    
+    .sg-top-bar {
+      height: 60px;
+      a.sg-logo {
+        img{
+          height: 60px;
+        }
+      }
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+
+    .sg-wrapper{
+      padding-top: 50px;
+      
+      .sg-product-catalog{
+        padding: 20px 0;
+        height: calc(100vh - 96px);
+        .col-12{
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+    }
+
+    .sg-top-bar {
+      height: 50px;
+      a.sg-logo {
+        img{
+          height: 50px;
+        }
+      }
+    }
+
+    #sidebar {
+      top: 50px;
+    }
+
+    .transformable-menu {
+      margin-top: 14px;
+    }
+
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .sg-wrapper{
+      padding-top: 50px;
+      
+      .sg-product-catalog{
+        padding: 20px 0;
+        height: calc(100vh - 96px);
+      }
+    }
+    
+    .sg-top-bar {
+      height: 50px;
+      a.sg-logo {
+        img{
+          height: 50px;
+        }
+      }
+    }
+
+    .transformable-menu {
+      margin-top: 14px;
+    }
+
+  }
+
+
+  @media (max-width: 320px) {
+    
+    .sg-wrapper{
+      padding-top: 50px;
+      
+      .sg-product-catalog{
+        padding: 20px 0;
+        height: calc(100vh - 96px);
+      }
+    }
+
+    .sg-top-bar {
+      height: 50px;
+      a.sg-logo {
+        img{
+          height: 50px;
+        }
+      }
+    }
+
+    .transformable-menu {
+      margin-top: 14px;
+    }
+
+
+}

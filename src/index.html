@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <style ></style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="container-fluid">
+        <div class="row no-gutters fixed-top sg-top-bar">
+            <div class="col">
+                <a href="#" class="sg-logo"><img src="assets/images/logo.svg" alt="Store Singapore - Wristbands House"></a>
+            </div>
+            <div class="col-6 d-none d-lg-block d-xl-block">
+                <form class="sg-search" action="">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><span class="wb-icon-search"></span></button>
+                </form>
+            </div>
+            <div class="col d-none d-lg-block d-xl-block">
+                <div class="sg-account">
+                    <span>
+                        <a href="#">Sign up</a>&nbsp;|&nbsp;<a href="#">Login</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- visible only in mobile start --------------------------------------------------------------------------->
+            <div class="col d-block d-sm-block d-md-block d-lg-none">
+                <div id="mobileMenu" class="transformable-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- visible only in mobile end --------------------------------------------------------------------------->
+
+        </div>
+    </div>
+
+        <!-- MENU START --------------------------------------------------------------------------->
+       
+        <div class="sg-wrapper">
+            <div class="sgMenu d-none d-lg-block d-xl-block">
+                <!-- Sticky top -->
+                <div class="sgMenu_home sticky-top">
+                    <span class="wb-icon-home"></span>
+                    <span class="menu--hide">Home</span>
+                    <span class="closeMenu_arrow wb-icon-arrow-left" id="sidebarCollapse"></span>
+                </div>
+                <!-- Menu -->
+                <div class="scroll-wrapper">
+                    <ul class="sgMenu_main">
+                        <li class="sgMenu-title">Our Products</li>
+                        <li><a href="#"><span class="wb-icon-Silicone-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Silicone Wristbands</span></a></li>
+                        <li><a href="#" class="sgMenu_main--active"><span class="wb-icon-Lanyards--Badge sgMenu_main--icons"></span><span class="menu--hide">Lanyards & Badge</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Beverages-Cooler sgMenu_main--icons"></span><span class="menu--hide">Beverages Cooler</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Cork-Coaster sgMenu_main--icons"></span><span class="menu--hide">Cork Coaster</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Fabric-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Fabric Wristbands</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Non-Woven-Tote-Bag sgMenu_main--icons"></span><span class="menu--hide">Non Woven Tote Bag</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Beach-Flag sgMenu_main--icons"></span><span class="menu--hide">Beach Flag</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Tyvek-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Tyvek Wristbands</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Pin-Badge sgMenu_main--icons"></span><span class="menu--hide">Pin Badge</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Custom-Mug sgMenu_main--icons"></span><span class="menu--hide">Custom Mug</span></a></li>
+                    </ul>
+                    <ul class="sgMenu_main">
+                        <li class="sgMenu-title">Pre-Made Products</li>
+                        <li><a href="#"><span class="wb-icon-Silicone-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Silicone Wristbands</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Lanyards--Badge sgMenu_main--icons"></span><span class="menu--hide">Lanyards & Badge</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Beverages-Cooler sgMenu_main--icons"></span><span class="menu--hide">Beverages Cooler</span></a></li>
+                    </ul>
+                </div>
+                <div class="fixed-bottom sgMenu_main--copyright">
+                    <span class="copyright-icon--hide copyright-icon--show">&copy;</span>
+                    <span class="menu--hide">Copyright © Wristbands House</span>
+                </div>
+            </div>
+
+            <!-- MENU END --------------------------------------------------------------------------->
+       
+            <!-- Mobile menu start --------------------------------------------------------------------------->
+
+            <div id="sidebar" class="sgMenu d-block d-sm-block d-md-block d-lg-none">
+                <!-- Sticky top -->
+                <div class="sgMenu_home sticky-top">
+                    <span class="wb-icon-home"></span>
+                    <span class="menu--hide">Home</span>
+                </div>
+                <!-- Menu -->
+                <div class="scroll-wrapper">
+                    <ul class="sgMenu_main">
+                        <li class="sgMenu-title">Our Products</li>
+                        <li><a href="#"><span class="wb-icon-Silicone-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Silicone Wristbands</span></a></li>
+                        <li><a href="#" class="sgMenu_main--active"><span class="wb-icon-Lanyards--Badge sgMenu_main--icons"></span><span class="menu--hide">Lanyards & Badge</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Beverages-Cooler sgMenu_main--icons"></span><span class="menu--hide">Beverages Cooler</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Cork-Coaster sgMenu_main--icons"></span><span class="menu--hide">Cork Coaster</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Fabric-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Fabric Wristbands</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Non-Woven-Tote-Bag sgMenu_main--icons"></span><span class="menu--hide">Non Woven Tote Bag</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Beach-Flag sgMenu_main--icons"></span><span class="menu--hide">Beach Flag</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Tyvek-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Tyvek Wristbands</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Pin-Badge sgMenu_main--icons"></span><span class="menu--hide">Pin Badge</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Custom-Mug sgMenu_main--icons"></span><span class="menu--hide">Custom Mug</span></a></li>
+                    </ul>
+                    <ul class="sgMenu_main">
+                        <li class="sgMenu-title">Pre-Made Products</li>
+                        <li><a href="#"><span class="wb-icon-Silicone-Wristbands sgMenu_main--icons"></span><span class="menu--hide">Silicone Wristbands</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Lanyards--Badge sgMenu_main--icons"></span><span class="menu--hide">Lanyards & Badge</span></a></li>
+                        <li><a href="#"><span class="wb-icon-Beverages-Cooler sgMenu_main--icons"></span><span class="menu--hide">Beverages Cooler</span></a></li>
+                    </ul>
+                </div>
+                <div class="sgMenu_main--copyright">
+                    <span class="copyright-icon--hide copyright-icon--show">&copy;</span>
+                    <span class="menu--hide">Copyright © Wristbands House</span>
+                </div>
+            </div>
+
+            <!-- Mobile menu end --------------------------------------------------------------------------->
+
+            <!-- PRODUCTS START --------------------------------------------------------------------------->
+            <div class="sg-product-catalog">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <h1>New Products<span class="show-more" data-toggle="collapse" data-target="#prod-collapse-1" aria-expanded="true" aria-controls="prod-collapse-1">Show More<span class="wb-icon-arrow-right rotate"></span></span></h1>
+                        </div>
+                    </div>
+                
+                
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row more-products collapse" id="prod-collapse-1" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <h1>Our All Product<span class="show-more" data-toggle="collapse" data-target="#prod-collapse-2" aria-expanded="true" aria-controls="prod-collapse-2">Show More<span class="wb-icon-arrow-right rotate"></span></span></h1>
+
+                        </div>
+                    </div>
+                
+                
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row more-products collapse" id="prod-collapse-2" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1>Recommended<span class="show-more" data-toggle="collapse" data-target="#prod-collapse-3" aria-expanded="true" aria-controls="prod-collapse-3">Show More<span class="wb-icon-arrow-right rotate"></span></span></h1>
+
+                        </div>
+                    </div>
+                
+                
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row more-products collapse" id="prod-collapse-3" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1>Our All Product<span class="show-more" data-toggle="collapse" data-target="#prod-collapse-4" aria-expanded="true" aria-controls="prod-collapse-4">Show More<span class="wb-icon-arrow-right rotate"></span></span></h1>
+                        </div>
+                    </div>
+                
+                
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row more-products collapse" id="prod-collapse-4" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
+                            <div class="sg-product">
+                                <div><img src="assets/images/1.jpg" alt="Silione Wristbands" class="img-fluid"></div>
+                                <a class="title" href="#">Silione Wristbands</a>
+                                <div class="sku">SKU-WBHDS</div>
+                                <p class="description">Classical debossed wristband gets a trendy and attractive look when it is ink filled.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCTS END --------------------------------------------------------------------------->
+
+            <!-- RIGHT SIDEBAR START --------------------------------------------------------------------------->
+
+            <div class="right-sidebar d-none d-lg-block d-xl-block">
+                <div class="aboutWristband">
+                    <h1>Wristbands House Pte Ld.</h1>
+                    <p>Wristbands House is successfully operating its 7th year serving global and local market. From its inception, it is well focused in creating the best value with superior quality and dedicated customer service. Ultimately, Wristbands House is your best choice for quality products and promising service with care.</p>
+                </div>
+                <div class="article">
+                    <h1>Article</h1>
+                    <ul>
+                        <li><a href="#">Wristbands for Night Clubs</a></li>
+                        <li><a href="#">Wristbands for Camps</a></li>
+                        <li><a href="#">Child Safety Wristbands</a></li>
+                        <li><a href="#">Wristbands for Foundraising</a></li>
+                        <li><a href="#">Wristbands for Schools</a></li>
+                        <li><a href="#">Wristbands for Sporting Events</a></li>
+                        <li><a href="#">Breast Cancer Awareness Wristbands</a></li>
+                        <li><a href="#">Wristbands for Staudium & Race Tracks</a></li>
+                        <li><a href="#">Wristbands for Hotels & Resorts</a></li>
+                    </ul>
+                </div>
+                <div class="video">
+                    <iframe width="306" height="227"
+                    src="https://www.youtube.com/embed/y3IqjLsC7QE">
+                    </iframe>
+                </div>
+                <div class="accordions" id="accordion">
+                    <div class="title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">About Us<span class="wb-icon-arrow-right rotate"></span></div>
+                    <ul id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Company Policy</a></li>
+                        <li><a href="#">Contuct us</a></li>
+                    </ul>
+                    <div class="title" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Gellary<span class="wb-icon-arrow-right rotate"></span></div>
+                    <ul id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                        <li><a href="#">Photo</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                    <div class="title" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Quick Contact<span class="wb-icon-arrow-right rotate"></span></div>
+                    <div class="quick-contact collapse" id="collapse3" aria-labelledby="heading3" data-parent="#accordion">
+                        <span class="wb-icon-qucik-contact"></span>
+                        <div class="info">
+                            <span class="number">+ 86-0750-3967170</span><br>
+                            <span class="email"><a href="mailto:info@wristbandshouse.com">info@wristbandshouse.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR END --------------------------------------------------------------------------->
+
+            <!-- right sidebar mobile start --------------------------------------------------------------------------->
+
+            <div id="sidebar-right" class="right-sidebar d-block d-sm-block d-md-block d-lg-none">
+                <div class="aboutWristband">
+                    <h1>Wristbands House Pte Ld.</h1>
+                    <p>Wristbands House is successfully operating its 7th year serving global and local market. From its inception, it is well focused in creating the best value with superior quality and dedicated customer service. Ultimately, Wristbands House is your best choice for quality products and promising service with care.</p>
+                </div>
+                <div class="article">
+                    <h1>Article</h1>
+                    <ul>
+                        <li><a href="#">Wristbands for Night Clubs</a></li>
+                        <li><a href="#">Wristbands for Camps</a></li>
+                        <li><a href="#">Child Safety Wristbands</a></li>
+                        <li><a href="#">Wristbands for Foundraising</a></li>
+                        <li><a href="#">Wristbands for Schools</a></li>
+                        <li><a href="#">Wristbands for Sporting Events</a></li>
+                        <li><a href="#">Breast Cancer Awareness Wristbands</a></li>
+                        <li><a href="#">Wristbands for Staudium & Race Tracks</a></li>
+                        <li><a href="#">Wristbands for Hotels & Resorts</a></li>
+                    </ul>
+                </div>
+                <div class="video">
+                    <iframe width="306" height="227"
+                    src="https://www.youtube.com/embed/y3IqjLsC7QE">
+                    </iframe>
+                </div>
+                <div class="accordions" id="accordion">
+                    <div class="title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">About Us<span class="wb-icon-arrow-right rotate"></span></div>
+                    <ul id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <li><a href="#">About Company</a></li>
+                        <li><a href="#">Company Policy</a></li>
+                        <li><a href="#">Contuct us</a></li>
+                    </ul>
+                    <div class="title" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Gellary<span class="wb-icon-arrow-right rotate"></span></div>
+                    <ul id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                        <li><a href="#">Photo</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                    <div class="title" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Quick Contact<span class="wb-icon-arrow-right rotate"></span></div>
+                    <div class="quick-contact collapse" id="collapse3" aria-labelledby="heading3" data-parent="#accordion">
+                        <span class="wb-icon-qucik-contact"></span>
+                        <div class="info">
+                            <span class="number">+ 86-0750-3967170</span><br>
+                            <span class="email"><a href="mailto:info@wristbandshouse.com">info@wristbandshouse.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right sidebar mobile end --------------------------------------------------------------------------->
+
+
+
+            
+        </div>
+
+        <div class="fixed-bottom bottom-bar d-none d-lg-block d-xl-block">Language - ENGLISH</div>
+
+        <!-- Mobile Bottom Bar Start --------------------------------------------------------------------------->
+
+        <div class="fixed-bottom bottom-bar--mobile d-block d-sm-block d-md-block d-lg-none">
+            <span class="wb-icon-cart float-left"></span>
+            <span id="secondMenu" class="wb-icon-menu2 float-right"></span>
+        </div>
+
+        <!-- Mobile Bottom Bar End --------------------------------------------------------------------------->
+        
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+            
+
+            $(document).ready(function () {
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('.sgMenu').toggleClass('closeMenu');
+                    $('#sidebarCollapse').toggleClass('wb-icon-arrow-right');
+                    $('#sidebarCollapse').toggleClass('wb-icon-arrow-left');
+                });
+
+                $(".show-more, .title").click(function(){
+                    $(this).children('.wb-icon-arrow-right').toggleClass("down"); 
+                })
+
+                
+
+                //Mobile menu start
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                });
+
+                $('#mobileMenu').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    $('.overlay').toggleClass('active');
+                    $(this).toggleClass('open');
+                });
+
+                $('.overlay').click(function(){
+                    $('#mobileMenu').removeClass('open');
+                });
+
+                //Mobile menu end
+
+                //right sidebar start
+
+                $('#dismiss-right, .overlay').on('click', function () {
+                    $('#sidebar-right').removeClass('active');
+                    $('.overlay').removeClass('active');
+                });
+
+                $('#secondMenu').on('click', function () {
+                    $('#sidebar-right').toggleClass('active');
+                    $('.overlay').toggleClass('active');
+                    $(this).toggleClass('selectedWhite');
+                });
+
+                $('.overlay').click(function(){
+                    $('#secondMenu').removeClass('selectedWhite');
+                });
+
+                //right sidebar end
+
+            });
+
+            
+
+            
+
+
+        </script>
+</body>
+</html>
