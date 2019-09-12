@@ -1,0 +1,636 @@
+@import 'variables','fonts','icons';
+
+
+/* Lodur Mobile Form Elements Start **************************************************/
+
+.lodurMobile-form input[type=text], .lodurMobile-form input[type=number], .lodurMobile-form input[type=date], .lodurMobile-form input[type=time], .lodurMobile-form select{
+    padding: 0.4rem 0.3rem;
+    border-radius: 0.25rem;
+    border: 1px solid #dadada;
+    background-color: #ffffff;
+    font-size: 0.875rem;
+    margin-top: 0.150rem;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 36px;
+}
+
+.lodurMobile-form input[type=radio]{
+    vertical-align: middle;
+}
+
+.lodurMobile-form textarea{
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #dadada;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  margin-top: 0.150rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.lodurMobile-form label{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.lodurMobile-form--datePicker, .lodurMobile-form--timePicker{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+.important-field{
+    color: red;
+}
+
+.customFileUpload {
+}
+
+
+/* Lodur Mobile Form Elements End **************************************************/
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.verbandLogo{
+    img{
+        // width: 220px;
+    }
+}
+
+.verband-page-space{
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.header-top-red{
+    background-color: $primary-red;
+    padding: 6px 0;
+    .verband-container{
+        margin: 0 auto;
+        padding: 0 80px;
+        i{
+            color: #fff;
+            font-size: 24px;
+        }
+    }
+}
+
+.header-top-menu{
+    background-color: $primary-grey;
+    padding: 6px 0;
+    .verband-container{
+        margin: 0 auto;
+        padding: 0 80px;
+        align-items: center;
+        justify-content: space-between;
+        ul.menu{
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            li{
+                list-style-type: none;
+                display: inline-block;
+                padding: 20px 0px;
+                &:hover{
+                    ul.subMenu{
+                        display: block;
+                        position: absolute;
+                    }
+                }
+                a{
+                    color: #fff;
+                    padding: 0 25px;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                &:last-child a{
+                    padding: 0 0 0 25px;
+                }
+                ul.subMenu{
+                    background-color: #fff;
+                    border-top: 4px solid $primary-red;
+                    padding: 5px 10px 10px;
+                    display: none;
+                    margin-top: 15px;
+                    box-shadow: 0 2px 5px #888888;
+                    z-index: 1;                    
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 30px;
+                        top: -15px;
+                        border-top: none;
+                        border-right: 15px solid transparent;
+                        border-left: 15px solid transparent;
+                        border-bottom: 15px solid $primary-red;
+                    }
+                    li{
+                        display: block;
+                        text-align: left;
+                        padding: 3px 2px;
+                        a{
+                            color: #000000;
+                            padding: 0 5px;
+                            &:hover{
+                                color: $primary-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#movable{
+    position:relative;
+    width: 545px;
+    background-color:$primary-red;
+}
+
+.red-header{
+    position:relative;
+    width: 545px;
+    background-color:$primary-red;
+}
+
+.verband-overlay{
+    position: absolute;
+    margin: 50px 0 0 0;
+    .overlay-info{
+        background-color: $transparent-white;
+        width: 545px;
+        padding: 20px 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 2;
+        p{
+            color: #000;
+        }
+    }
+    button.movable-button{
+        background-color: transparent;
+        border: none;
+        vertical-align: middle;
+        display: flex;
+        color: #ffffff;
+        align-items: center;
+        width: 100%;
+        outline: none;
+        span{
+            font-size: 30px;
+            border-right: 1px solid #000000;
+            padding: 7px 30px 7px 25px;
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .overlay-info-expanded{
+        background-color: $transparent-white;
+        width: 545px;
+        padding: 20px 30px;
+        text-align: justify;
+        font-size: 14px;
+        line-height: 2;
+        margin-top: 30px;
+        display: none;
+        position: relative;
+        &:after {
+            content: " ";
+            position: absolute;
+            top: -15px;
+            border-top: none;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid $transparent-white;
+        }
+        label{
+            width: 100%;
+        }
+        .verbandButton{
+            border: 1px solid #000000;
+            background: transparent;
+            text-align: center;
+            color: #000000;
+            text-transform: uppercase;
+            border-radius: 50px;
+            width: 100%;
+            font-size: 14px;
+            padding: 3px 0;
+            margin: 30px 0 0;
+            transition: background 0.2s linear, color 0.2s linear;
+            cursor: pointer;
+            &:hover{
+                background-color: #000000;
+                border: 1px solid #000000;
+                color: #ffffff;
+                transition: background 0.3s linear, color 0.2s linear;
+            }
+            img{
+                vertical-align: text-bottom;
+                margin: 0 5px;
+            }
+        }
+        .verbandButton .verband-icon-step-arrow{
+            font-size: 20px;
+            vertical-align: text-bottom;
+            margin-left: 5px;
+        }
+        button{
+            background: transparent;
+            border: 0;
+            outline: none;
+        }
+        button span{
+            font-size: 18px;
+        }
+
+        .feedback-message p:first-child, .feedback-message p:last-child{
+            font-weight: 600;
+        }
+
+        .feedback-message p:last-child{
+            margin-bottom: 0;
+        }
+
+        .invisible{
+            display: none;
+        }          
+        
+        /* Styling Parts */
+        #part1,
+        #part2{
+            z-index: 2;
+            height: auto;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Hidden Parts */
+        #part2{
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Show Step 2 & Hide Step 1 */
+        #step2:checked ~ #part2 {
+            opacity: 1;
+            height: auto;
+        }
+        #step2:checked ~ #part1 {
+            opacity: 0;
+            height: 0;
+            display: none;
+        }
+
+
+
+    }
+    .overlay-info-inner{
+        background-color: $transparent-white;
+        width: 545px;
+        padding: 20px 30px;
+        text-align: justify;
+        font-size: 14px;
+        line-height: 2;
+        margin-top: 30px;
+        position: relative;
+        &:after {
+            content: " ";
+            position: absolute;
+            top: -15px;
+            border-top: none;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid $transparent-white;
+        }
+    }
+    .lien-container{
+        ul{
+            margin: 0;
+            li{
+                padding: 8px 0;
+                border-bottom: 1px solid #e5e5e5;
+            }
+        }
+    }
+    .member-container{
+        ul{
+            padding: 0;
+            li{
+                display: flex;
+                align-items: center;
+                padding: 8px 0;
+                border-bottom: 1px solid #e5e5e5;
+                .member-photo{
+                    img{
+                        border-radius: 50%;
+                        border: 3px solid #fff;
+                        box-shadow: 0 1px 5px #000;
+                        height: 100px;
+                        width: 100px;
+                        object-fit: cover;
+                    }
+                }
+                .member-info{
+                    padding: 25px 0 0 20px;
+                    h4{
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+    .partner-container{
+        h4{
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            span{
+                font-size: 12px;
+                color: #757575;
+                display: block;
+            }
+        }
+        hr{
+            margin: 10px 0 15px 0;
+        }
+        label{
+            width: 100%;
+        }
+        button{
+            background: transparent;
+            border: 0;
+            outline: none;
+            span{
+                font-size: 18px;
+            }
+        }
+        .verbandButton{
+            border: 1px solid #000000;
+            background: transparent;
+            text-align: center;
+            color: #000000;
+            text-transform: uppercase;
+            border-radius: 50px;
+            width: 100%;
+            font-size: 14px;
+            padding: 3px 0;
+            margin: 30px 0 0;
+            transition: background 0.2s linear, color 0.2s linear;
+            cursor: pointer;
+            &:hover{
+                background-color: #000000;
+                border: 1px solid #000000;
+                color: #ffffff;
+                transition: background 0.3s linear, color 0.2s linear;
+            }
+            img{
+                vertical-align: text-bottom;
+                margin: 0 5px;
+            }
+        }
+
+        .feedback-message p:first-child, .feedback-message p:last-child{
+            font-weight: 600;
+        }
+
+        .feedback-message p:last-child{
+            margin-bottom: 0;
+        }
+
+        .invisible{
+            display: none;
+        }          
+        
+        /* Styling Parts */
+        #part1,
+        #part2,
+        #part3,
+        #part4,
+        #part5 {
+            z-index: 2;
+            height: auto;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Hidden Parts */
+        #part2,
+        #part3,
+        #part4,
+        #part5 {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Show Step 2 & Hide Step 1 */
+        #step2:checked ~ #part2 {
+            opacity: 1;
+            height: auto;
+        }
+        #step2:checked ~ #part1 {
+            opacity: 0;
+            height: 0;
+            display: none;
+        }
+
+        /* Show Step 3 & Hide Step 2 */
+        #step3:checked ~ #part3 {
+            opacity: 1;
+            height: auto;
+        }
+        #step3:checked ~ #part2 {
+            opacity: 0;
+            height: 0;
+            display: none;
+        }
+
+        /* Show Step 4 & Hide Step 3 */
+        #step4:checked ~ #part4 {
+            opacity: 1;
+            height: auto;
+        }
+        #step4:checked ~ #part3 {
+            opacity: 0;
+            height: 0;
+            display: none;
+        }
+
+        /* Show Step 5 & Hide Step 4 */
+        #step5:checked ~ #part5 {
+            opacity: 1;
+            height: auto;
+        }
+        #step5:checked ~ #part4 {
+            opacity: 0;
+            height: 0;
+            display: none;
+        }
+
+    }
+}
+
+.heading-les-offres{
+    background: $primary-red;
+    .les-offres-inside{
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 80px 0;
+        h2{
+            color: #fff;
+            font-size: 16px;
+            span{
+                margin-right: 10px;
+            }
+        }
+        form{
+            display: flex;
+            .offres-filter{
+                margin-right: 10px;
+                width: 30%;
+            }
+            .offres-search{
+                width: 70%;
+            }
+        }
+    }
+}
+
+.offres-container{
+    .offresTabs{
+        margin: 50px 0 0 0;
+        text-align: center;
+        z-index: 9;
+        position: relative;
+        .activeTab{
+            background: $primary-red!important;
+            color: #fff;
+        }
+        button{
+            padding: 5px 30px;
+            font-size: 14px;
+            outline: none;
+        }
+        button:first-child{
+            border: 1px solid $primary-red;
+            background: #fff;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            position: relative;
+            left: 6px;
+        }
+        button:last-child{
+            border: 1px solid $primary-red;
+            background: #fff;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
+    .offresTable{
+        padding: 0 78px;
+        table{
+            width: 100%;
+            margin-top: 40px;
+            th{
+                padding: 5px 0 5px 0;
+                border-bottom: 1px solid #ccc;
+            }
+            td{
+                padding: 7px 0;
+            }
+            th:last-child{
+                text-align: right;
+            }
+            tr:nth-child(1) td{
+                padding-top: 20px;
+            }
+            td:last-child{
+                text-align: right;
+            }
+        }
+    }
+    #map{
+        position: relative;
+        top: -83px;
+    }
+}
+
+.verbandButton {
+    .verband-icon-step-arrow-left{
+        font-size: 20px;
+        vertical-align: text-bottom;
+        margin-right: 5px;
+    }    
+}
+
+.verbandButton {
+    .verband-icon-step-arrow-right{
+        font-size: 20px;
+        vertical-align: text-bottom;
+        margin-left: 5px;
+    }    
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4CAF50;
+  }
+  
+
+  .discoverMap-header{
+    background: $primary-grey;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 30px;
+    h1{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 10px 0 3px;
+        span{
+            font-size: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+            position: relative;
+            top: -2px;
+        }
+    }
+  }

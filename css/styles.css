@@ -1,0 +1,750 @@
+/*--------------------
+Lodur Icons
+--------------------*/
+/*--------------------
+General styles
+--------------------*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-ThinItalic.woff2") format("woff2"), url("../assets/font/Montserrat-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-ThinItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("../assets/font/Montserrat-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-ExtraBold.woff2") format("woff2"), url("../assets/font/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-SemiBold.woff2") format("woff2"), url("../assets/font/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-SemiBold.woff2") format("woff2"), url("../assets/font/MontserratAlternates-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-ExtraBold.woff2") format("woff2"), url("../assets/font/MontserratAlternates-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-Regular.woff2") format("woff2"), url("../assets/font/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-Thin.woff2") format("woff2"), url("../assets/font/Montserrat-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-Italic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-Thin.woff2") format("woff2"), url("../assets/font/MontserratAlternates-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-MediumItalic.woff2") format("woff2"), url("../assets/font/Montserrat-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-Black.woff2") format("woff2"), url("../assets/font/MontserratAlternates-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-Medium.woff2") format("woff2"), url("../assets/font/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../assets/font/Montserrat-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-ExtraBoldItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-BoldItalic.woff2") format("woff2"), url("../assets/font/Montserrat-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-BlackItalic.woff2") format("woff2"), url("../assets/font/Montserrat-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-Light.woff2") format("woff2"), url("../assets/font/MontserratAlternates-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-SemiBoldItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-ExtraLight.woff2") format("woff2"), url("../assets/font/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-BoldItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-Bold.woff2") format("woff2"), url("../assets/font/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("../assets/font/Montserrat-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-Regular.woff2") format("woff2"), url("../assets/font/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-LightItalic.woff2") format("woff2"), url("../assets/font/Montserrat-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-Black.woff2") format("woff2"), url("../assets/font/Montserrat-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-LightItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates ExLight';
+  src: url("../assets/font/MontserratAlternates-ExtraLightItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-Medium.woff2") format("woff2"), url("../assets/font/MontserratAlternates-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-MediumItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url("../assets/font/MontserratAlternates-BlackItalic.woff2") format("woff2"), url("../assets/font/MontserratAlternates-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-Italic.woff2") format("woff2"), url("../assets/font/Montserrat-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-Bold.woff2") format("woff2"), url("../assets/font/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat Alternates ExLight';
+  src: url("../assets/font/MontserratAlternates-ExtraLight.woff2") format("woff2"), url("../assets/font/MontserratAlternates-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/font/Montserrat-Light.woff2") format("woff2"), url("../assets/font/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'verband';
+  src: url("../assets/icon/verband.eot?anubae");
+  src: url("../assets/icon/verband.eot?anubae#iefix") format("embedded-opentype"), url("../assets/icon/verband.ttf?anubae") format("truetype"), url("../assets/icon/verband.woff?anubae") format("woff"), url("../assets/icon/verband.svg?anubae#verband") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="verband-icon-"], [class*=" verband-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'verband' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.verband-icon-attachment:before {
+  content: "\e906"; }
+
+.verband-icon-step-arrow-left:before {
+  content: "\e907"; }
+
+.verband-icon-step-arrow-right:before {
+  content: "\e908"; }
+
+.verband-icon-link:before {
+  content: "\e900"; }
+
+.verband-icon-member:before {
+  content: "\e901"; }
+
+.verband-icon-partner:before {
+  content: "\e902"; }
+
+.verband-icon-portrait:before {
+  content: "\e903"; }
+
+.verband-icon-cart:before {
+  content: "\e904"; }
+
+.verband-icon-location:before {
+  content: "\e905"; }
+
+/* Lodur Mobile Form Elements Start **************************************************/
+.lodurMobile-form input[type=text], .lodurMobile-form input[type=number], .lodurMobile-form input[type=date], .lodurMobile-form input[type=time], .lodurMobile-form select {
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #dadada;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  margin-top: 0.150rem;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 36px; }
+
+.lodurMobile-form input[type=radio] {
+  vertical-align: middle; }
+
+.lodurMobile-form textarea {
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #dadada;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  margin-top: 0.150rem;
+  width: 100%;
+  margin-bottom: 10px; }
+
+.lodurMobile-form label {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0; }
+
+.lodurMobile-form--datePicker, .lodurMobile-form--timePicker {
+  position: absolute;
+  right: 15px;
+  bottom: 20px; }
+
+.important-field {
+  color: red; }
+
+/* Lodur Mobile Form Elements End **************************************************/
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat'; }
+
+.verband-page-space {
+  margin: 0 auto;
+  padding: 0 80px; }
+
+.header-top-red {
+  background-color: #ed2024;
+  padding: 6px 0; }
+  .header-top-red .verband-container {
+    margin: 0 auto;
+    padding: 0 80px; }
+    .header-top-red .verband-container i {
+      color: #fff;
+      font-size: 24px; }
+
+.header-top-menu {
+  background-color: #666666;
+  padding: 6px 0; }
+  .header-top-menu .verband-container {
+    margin: 0 auto;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: space-between; }
+    .header-top-menu .verband-container ul.menu {
+      margin: 0;
+      padding: 0;
+      text-align: right; }
+      .header-top-menu .verband-container ul.menu li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 20px 0px; }
+        .header-top-menu .verband-container ul.menu li:hover ul.subMenu {
+          display: block;
+          position: absolute; }
+        .header-top-menu .verband-container ul.menu li a {
+          color: #fff;
+          padding: 0 25px; }
+          .header-top-menu .verband-container ul.menu li a:hover {
+            text-decoration: none; }
+        .header-top-menu .verband-container ul.menu li:last-child a {
+          padding: 0 0 0 25px; }
+        .header-top-menu .verband-container ul.menu li ul.subMenu {
+          background-color: #fff;
+          border-top: 4px solid #ed2024;
+          padding: 5px 10px 10px;
+          display: none;
+          margin-top: 15px;
+          box-shadow: 0 2px 5px #888888;
+          z-index: 1; }
+          .header-top-menu .verband-container ul.menu li ul.subMenu:after {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: -15px;
+            border-top: none;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            border-bottom: 15px solid #ed2024; }
+          .header-top-menu .verband-container ul.menu li ul.subMenu li {
+            display: block;
+            text-align: left;
+            padding: 3px 2px; }
+            .header-top-menu .verband-container ul.menu li ul.subMenu li a {
+              color: #000000;
+              padding: 0 5px; }
+              .header-top-menu .verband-container ul.menu li ul.subMenu li a:hover {
+                color: #ed2024; }
+
+#movable {
+  position: relative;
+  width: 545px;
+  background-color: #ed2024; }
+
+.red-header {
+  position: relative;
+  width: 545px;
+  background-color: #ed2024; }
+
+.verband-overlay {
+  position: absolute;
+  margin: 50px 0 0 0; }
+  .verband-overlay .overlay-info {
+    background-color: rgba(255, 255, 255, 0.93);
+    width: 545px;
+    padding: 20px 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 2; }
+    .verband-overlay .overlay-info p {
+      color: #000; }
+  .verband-overlay button.movable-button {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    width: 100%;
+    outline: none; }
+    .verband-overlay button.movable-button span {
+      font-size: 30px;
+      border-right: 1px solid #000000;
+      padding: 7px 30px 7px 25px; }
+    .verband-overlay button.movable-button p {
+      text-align: center;
+      margin: 0;
+      width: 100%; }
+  .verband-overlay .overlay-info-expanded {
+    background-color: rgba(255, 255, 255, 0.93);
+    width: 545px;
+    padding: 20px 30px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 30px;
+    display: none;
+    position: relative;
+    /* Styling Parts */
+    /* Hidden Parts */
+    /* Show Step 2 & Hide Step 1 */ }
+    .verband-overlay .overlay-info-expanded:after {
+      content: " ";
+      position: absolute;
+      top: -15px;
+      border-top: none;
+      border-right: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid rgba(255, 255, 255, 0.93); }
+    .verband-overlay .overlay-info-expanded label {
+      width: 100%; }
+    .verband-overlay .overlay-info-expanded .verbandButton {
+      border: 1px solid #000000;
+      background: transparent;
+      text-align: center;
+      color: #000000;
+      text-transform: uppercase;
+      border-radius: 50px;
+      width: 100%;
+      font-size: 14px;
+      padding: 3px 0;
+      margin: 30px 0 0;
+      transition: background 0.2s linear, color 0.2s linear;
+      cursor: pointer; }
+      .verband-overlay .overlay-info-expanded .verbandButton:hover {
+        background-color: #000000;
+        border: 1px solid #000000;
+        color: #ffffff;
+        transition: background 0.3s linear, color 0.2s linear; }
+      .verband-overlay .overlay-info-expanded .verbandButton img {
+        vertical-align: text-bottom;
+        margin: 0 5px; }
+    .verband-overlay .overlay-info-expanded .verbandButton .verband-icon-step-arrow {
+      font-size: 20px;
+      vertical-align: text-bottom;
+      margin-left: 5px; }
+    .verband-overlay .overlay-info-expanded button {
+      background: transparent;
+      border: 0;
+      outline: none; }
+    .verband-overlay .overlay-info-expanded button span {
+      font-size: 18px; }
+    .verband-overlay .overlay-info-expanded .feedback-message p:first-child, .verband-overlay .overlay-info-expanded .feedback-message p:last-child {
+      font-weight: 600; }
+    .verband-overlay .overlay-info-expanded .feedback-message p:last-child {
+      margin-bottom: 0; }
+    .verband-overlay .overlay-info-expanded .invisible {
+      display: none; }
+    .verband-overlay .overlay-info-expanded #part1,
+    .verband-overlay .overlay-info-expanded #part2 {
+      z-index: 2;
+      height: auto;
+      opacity: 1;
+      transition: opacity 1s ease-in-out; }
+    .verband-overlay .overlay-info-expanded #part2 {
+      opacity: 0;
+      height: 0;
+      overflow: hidden; }
+    .verband-overlay .overlay-info-expanded #step2:checked ~ #part2 {
+      opacity: 1;
+      height: auto; }
+    .verband-overlay .overlay-info-expanded #step2:checked ~ #part1 {
+      opacity: 0;
+      height: 0;
+      display: none; }
+  .verband-overlay .overlay-info-inner {
+    background-color: rgba(255, 255, 255, 0.93);
+    width: 545px;
+    padding: 20px 30px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 30px;
+    position: relative; }
+    .verband-overlay .overlay-info-inner:after {
+      content: " ";
+      position: absolute;
+      top: -15px;
+      border-top: none;
+      border-right: 15px solid transparent;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid rgba(255, 255, 255, 0.93); }
+  .verband-overlay .lien-container ul {
+    margin: 0; }
+    .verband-overlay .lien-container ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #e5e5e5; }
+  .verband-overlay .member-container ul {
+    padding: 0; }
+    .verband-overlay .member-container ul li {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #e5e5e5; }
+      .verband-overlay .member-container ul li .member-photo img {
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-shadow: 0 1px 5px #000;
+        height: 100px;
+        width: 100px;
+        object-fit: cover; }
+      .verband-overlay .member-container ul li .member-info {
+        padding: 25px 0 0 20px; }
+        .verband-overlay .member-container ul li .member-info h4 {
+          font-size: 16px;
+          font-weight: 600; }
+        .verband-overlay .member-container ul li .member-info p {
+          font-size: 11px; }
+  .verband-overlay .partner-container {
+    /* Styling Parts */
+    /* Hidden Parts */
+    /* Show Step 2 & Hide Step 1 */
+    /* Show Step 3 & Hide Step 2 */
+    /* Show Step 4 & Hide Step 3 */
+    /* Show Step 5 & Hide Step 4 */ }
+    .verband-overlay .partner-container h4 {
+      padding: 0;
+      margin: 0;
+      font-size: 20px; }
+      .verband-overlay .partner-container h4 span {
+        font-size: 12px;
+        color: #757575;
+        display: block; }
+    .verband-overlay .partner-container hr {
+      margin: 10px 0 15px 0; }
+    .verband-overlay .partner-container label {
+      width: 100%; }
+    .verband-overlay .partner-container button {
+      background: transparent;
+      border: 0;
+      outline: none; }
+      .verband-overlay .partner-container button span {
+        font-size: 18px; }
+    .verband-overlay .partner-container .verbandButton {
+      border: 1px solid #000000;
+      background: transparent;
+      text-align: center;
+      color: #000000;
+      text-transform: uppercase;
+      border-radius: 50px;
+      width: 100%;
+      font-size: 14px;
+      padding: 3px 0;
+      margin: 30px 0 0;
+      transition: background 0.2s linear, color 0.2s linear;
+      cursor: pointer; }
+      .verband-overlay .partner-container .verbandButton:hover {
+        background-color: #000000;
+        border: 1px solid #000000;
+        color: #ffffff;
+        transition: background 0.3s linear, color 0.2s linear; }
+      .verband-overlay .partner-container .verbandButton img {
+        vertical-align: text-bottom;
+        margin: 0 5px; }
+    .verband-overlay .partner-container .feedback-message p:first-child, .verband-overlay .partner-container .feedback-message p:last-child {
+      font-weight: 600; }
+    .verband-overlay .partner-container .feedback-message p:last-child {
+      margin-bottom: 0; }
+    .verband-overlay .partner-container .invisible {
+      display: none; }
+    .verband-overlay .partner-container #part1,
+    .verband-overlay .partner-container #part2,
+    .verband-overlay .partner-container #part3,
+    .verband-overlay .partner-container #part4,
+    .verband-overlay .partner-container #part5 {
+      z-index: 2;
+      height: auto;
+      opacity: 1;
+      transition: opacity 1s ease-in-out; }
+    .verband-overlay .partner-container #part2,
+    .verband-overlay .partner-container #part3,
+    .verband-overlay .partner-container #part4,
+    .verband-overlay .partner-container #part5 {
+      opacity: 0;
+      height: 0;
+      overflow: hidden; }
+    .verband-overlay .partner-container #step2:checked ~ #part2 {
+      opacity: 1;
+      height: auto; }
+    .verband-overlay .partner-container #step2:checked ~ #part1 {
+      opacity: 0;
+      height: 0;
+      display: none; }
+    .verband-overlay .partner-container #step3:checked ~ #part3 {
+      opacity: 1;
+      height: auto; }
+    .verband-overlay .partner-container #step3:checked ~ #part2 {
+      opacity: 0;
+      height: 0;
+      display: none; }
+    .verband-overlay .partner-container #step4:checked ~ #part4 {
+      opacity: 1;
+      height: auto; }
+    .verband-overlay .partner-container #step4:checked ~ #part3 {
+      opacity: 0;
+      height: 0;
+      display: none; }
+    .verband-overlay .partner-container #step5:checked ~ #part5 {
+      opacity: 1;
+      height: auto; }
+    .verband-overlay .partner-container #step5:checked ~ #part4 {
+      opacity: 0;
+      height: 0;
+      display: none; }
+
+.heading-les-offres {
+  background: #ed2024; }
+  .heading-les-offres .les-offres-inside {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 80px 0; }
+    .heading-les-offres .les-offres-inside h2 {
+      color: #fff;
+      font-size: 16px; }
+      .heading-les-offres .les-offres-inside h2 span {
+        margin-right: 10px; }
+    .heading-les-offres .les-offres-inside form {
+      display: flex; }
+      .heading-les-offres .les-offres-inside form .offres-filter {
+        margin-right: 10px;
+        width: 30%; }
+      .heading-les-offres .les-offres-inside form .offres-search {
+        width: 70%; }
+
+.offres-container .offresTabs {
+  margin: 50px 0 0 0;
+  text-align: center;
+  z-index: 9;
+  position: relative; }
+  .offres-container .offresTabs .activeTab {
+    background: #ed2024 !important;
+    color: #fff; }
+  .offres-container .offresTabs button {
+    padding: 5px 30px;
+    font-size: 14px;
+    outline: none; }
+  .offres-container .offresTabs button:first-child {
+    border: 1px solid #ed2024;
+    background: #fff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: relative;
+    left: 6px; }
+  .offres-container .offresTabs button:last-child {
+    border: 1px solid #ed2024;
+    background: #fff;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+
+.offres-container .offresTable {
+  padding: 0 78px; }
+  .offres-container .offresTable table {
+    width: 100%;
+    margin-top: 40px; }
+    .offres-container .offresTable table th {
+      padding: 5px 0 5px 0;
+      border-bottom: 1px solid #ccc; }
+    .offres-container .offresTable table td {
+      padding: 7px 0; }
+    .offres-container .offresTable table th:last-child {
+      text-align: right; }
+    .offres-container .offresTable table tr:nth-child(1) td {
+      padding-top: 20px; }
+    .offres-container .offresTable table td:last-child {
+      text-align: right; }
+
+.offres-container #map {
+  position: relative;
+  top: -83px; }
+
+.verbandButton .verband-icon-step-arrow-left {
+  font-size: 20px;
+  vertical-align: text-bottom;
+  margin-right: 5px; }
+
+.verbandButton .verband-icon-step-arrow-right {
+  font-size: 20px;
+  vertical-align: text-bottom;
+  margin-left: 5px; }
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5; }
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1; }
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50; }
+
+.discoverMap-header {
+  background: #666666;
+  padding: 5px 0;
+  text-align: center;
+  margin-top: 30px; }
+  .discoverMap-header h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 0 3px; }
+    .discoverMap-header h1 span {
+      font-size: 30px;
+      vertical-align: middle;
+      margin-right: 10px;
+      position: relative;
+      top: -2px; }
